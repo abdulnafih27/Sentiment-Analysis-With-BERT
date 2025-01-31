@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis with BERT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .positive {
+            background-color: green;
+        }
+        .negative {
+            background-color: red;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            resize: none;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sentiment Analysis with BERT</h1>
+
+    <div class="container">
+        <form method="POST">
+            <textarea name="text" rows="5" placeholder="Enter text to analyze" required></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        {% if sentiment %}
+        <div class="result {% if sentiment == 'Positive' %}positive{% else %}negative{% endif %}">
+            Sentiment: {{ sentiment }} (for text: "{{ text }}")
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
