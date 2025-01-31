@@ -17,8 +17,8 @@ Ensure you have Python 3.7 or later installed.
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/abdulnafih27/Sentimental-Analysis-With-BERT.git
-cd Sentimental-Analysis-With-BERT
+git clone https://github.com/abdulnafih27/Sentiment-Analysis-With-BERT.git
+cd Sentiment-Analysis-With-BERT
 ```
 
 ### Install Dependencies
