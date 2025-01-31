@@ -67,9 +67,3 @@ The API also provides a sentiment analysis endpoint:
 - Deploy using Docker and cloud services.
 - Improve UI/UX with better frontend design.
 - Add support for multiple languages.
-
-## License
-This project is licensed under the MIT License.
-```
-
-This updated `README.md` now reflects the change to use `download_model.py` for downloading the model files. Let me know if you need any further changes!
